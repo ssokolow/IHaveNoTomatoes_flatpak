@@ -5,7 +5,17 @@
   "runtime-version": "22.08",
   "sdk": "org.freedesktop.Sdk",
   "command": "tomatoes",
-  "cleanup": ["/include", "*.a", "*.la"],
+  "cleanup": [
+    "/include",
+    "*.a",
+    "*.la",
+    "/bin/libmikmod-config",
+    "/bin/sdl-config",
+    "/lib/pkgconfig",
+    "/share/aclocal",
+    "/share/info",
+    "/share/man"
+  ],
   "finish-args": [
     "--socket=wayland",
     "--socket=fallback-x11",
