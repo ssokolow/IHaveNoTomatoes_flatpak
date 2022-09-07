@@ -7,7 +7,8 @@
   "command": "tomatoes",
   "cleanup": ["/include", "*.a", "*.la"],
   "finish-args": [
-    "--socket=x11",
+    "--socket=wayland",
+    "--socket=fallback-x11",
     "--socket=pulseaudio",
     "--device=dri",
     "--persist=.tomatoes"
