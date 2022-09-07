@@ -6,7 +6,12 @@
   "sdk": "org.freedesktop.Sdk",
   "command": "tomatoes",
   "cleanup": ["/include", "*.a", "*.la"],
-  "finish-args": ["--socket=x11", "--socket=pulseaudio", "--device=dri"],
+  "finish-args": [
+    "--socket=x11",
+    "--socket=pulseaudio",
+    "--device=dri",
+    "--persist=.tomatoes"
+  ],
   "modules": [
     "shared-modules/glu/glu-9.json",
     "shared-modules/SDL/sdl12-compat.json",
@@ -66,10 +71,6 @@
         {
           "type": "patch",
           "path": "patches/0004-fix_asset_paths.patch"
-        },
-        {
-          "type": "patch",
-          "path": "patches/0005-fix_writable_paths.patch"
         }
       ]
     }
