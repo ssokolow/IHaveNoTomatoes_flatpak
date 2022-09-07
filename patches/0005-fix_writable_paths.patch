@@ -1,0 +1,18 @@
+Effect: Save/load config and high scores where Flatpak wants them to be
+Author: Stephan Sokolow
+License: CC0-1.0
+
+--- a/src/config.cpp	2022-09-06 21:27:39.314288864 -0400
++++ b/src/config.cpp	2022-09-06 21:29:16.908909397 -0400
+@@ -46,9 +46,9 @@
+ // exists in the user's home directory.
+ string get_tomatoes_dir() {
+ 	// Get the HOME environment variable
+-	char *home = getenv("HOME");
++	char *home = getenv("XDG_DATA_HOME");
+ 	if(home != NULL) {
+-		string tmp = (string)home + "/.tomatoes/";
++		string tmp = (string)home + "/tomatoes/";
+ 		// Check if the directory exists
+ 		DIR *dp = NULL;
+ 		dp = opendir(tmp.c_str());
