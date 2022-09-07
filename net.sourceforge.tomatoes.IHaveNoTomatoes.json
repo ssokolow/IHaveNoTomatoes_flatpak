@@ -57,12 +57,29 @@
     {
       "name": "tomatoes",
       "buildsystem": "simple",
-      "build-commands": ["make", "cp tomatoes /app/bin/"],
+      "build-commands": [
+        "make",
+        "cp tomatoes /app/bin/",
+        "mkdir -p /app/share/metainfo",
+        "mkdir -p /app/share/applications",
+        "mkdir -p /app/share/icons/hicolor/64x64/apps",
+        "cp net.sourceforge.tomatoes.IHaveNoTomatoes.appdata.xml /app/share/metainfo/",
+        "cp net.sourceforge.tomatoes.IHaveNoTomatoes.desktop /app/share/applications/",
+        "cp icon.png /app/share/icons/hicolor/64x64/apps/net.sourceforge.tomatoes.IHaveNoTomatoes.png"
+      ],
       "sources": [
         {
           "type": "archive",
           "url": "https://downloads.sourceforge.net/tomatoes/tomatoes-linux-src-1.55.tar.bz2",
           "sha256": "126d001532ee5b81cc95e1a86a274d11669b8c8f65c8235ae2e9b8fbdfab4a60"
+        },
+        {
+          "type": "file",
+          "path": "net.sourceforge.tomatoes.IHaveNoTomatoes.appdata.xml"
+        },
+        {
+          "type": "file",
+          "path": "net.sourceforge.tomatoes.IHaveNoTomatoes.desktop"
         },
         {
           "type": "patch",

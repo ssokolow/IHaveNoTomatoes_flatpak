@@ -2,9 +2,9 @@
 <!-- Copyright 2022 Stephan Sokolow -->
 <component type="console-application">
   <id>net.sourceforge.tomatoes.IHaveNoTomatoes</id>
-  <!-- TODO: Zlib has not been reviewed for use on sites like Flathub. Either
-    get permission to relicense description and screenshots under one of the
-    licenses listed at
+  <!-- TODO: Zlib license hasn't been reviewed for use on sites like Flathub.
+    Either get permission to relicense description and screenshots under one
+    of the licenses listed at
     https://www.freedesktop.org/software/appstream/docs/chap-Metadata.html#tag-metadata_license
     or make my own. -->
   <metadata_license>Zlib</metadata_license>
@@ -15,11 +15,12 @@
   <description>
     <p>I Have No Tomatoes is an extreme leisure time activity idea of which culminates in the following question: How many tomatoes can you smash in ten short minutes? If you have the time to spare, this game has the vegetables just waiting to be eliminated!</p>
   </description>
-  <!-- TODO: <launchable type="desktop-id">org.gnome.gnome-power-statistics.desktop</launchable> -->
+  <launchable type="desktop-id">net.sourceforge.tomatoes.IHaveNoTomatoes.desktop</launchable>
   <categories>
     <category>Game</category>
     <category>ArcadeGame</category>
   </categories>
+  <icon type="local" width="64" height="64">/app/share/icons/hicolor/64x64/apps/net.sourceforge.tomatoes.IHaveNoTomatoes.png</icon>
   <icon type="remote" width="51" height="51">http://tomatoes.sourceforge.net/tomato.gif</icon>
   <screenshots>
     <screenshot type="default">
