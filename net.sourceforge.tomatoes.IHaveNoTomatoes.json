@@ -83,7 +83,6 @@
       "name": "tomatoes",
       "buildsystem": "simple",
       "build-commands": ["make", "cp tomatoes /app/bin/"],
-      "config-opts": ["-DCMAKE_BUILD_TYPE=Release"],
       "sources": [
         {
           "type": "archive",
