@@ -4,6 +4,7 @@ A proposed Flathub addition for the game
 
 To test locally, run the following commands from the root of the repository:
 
+    git submodule update --init --recursive
     flatpak-builder --user --install --force-clean build net.sourceforge.tomatoes.IHaveNoTomatoes.json
     flatpak run net.sourceforge.tomatoes.IHaveNoTomatoes
 
