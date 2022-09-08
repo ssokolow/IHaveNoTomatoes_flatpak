@@ -2,12 +2,7 @@
 <!-- Copyright 2022 Stephan Sokolow -->
 <component type="console-application">
   <id>net.sourceforge.tomatoes.IHaveNoTomatoes</id>
-  <!-- TODO: Zlib license hasn't been reviewed for use on sites like Flathub.
-    Either get permission to relicense description and screenshots under one
-    of the licenses listed at
-    https://www.freedesktop.org/software/appstream/docs/chap-Metadata.html#tag-metadata_license
-    or make my own. -->
-  <metadata_license>Zlib</metadata_license>
+  <metadata_license>MIT</metadata_license>
   <project_license>Zlib</project_license>
   <name>I Have No Tomatoes</name>
   <summary>Tomato smashing game</summary>
