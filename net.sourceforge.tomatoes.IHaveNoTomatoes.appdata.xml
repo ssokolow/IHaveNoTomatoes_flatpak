@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Copyright 2022 Stephan Sokolow -->
-<component type="console-application">
+<component type="desktop-application">
   <id>net.sourceforge.tomatoes.IHaveNoTomatoes</id>
   <metadata_license>MIT</metadata_license>
   <project_license>Zlib</project_license>
