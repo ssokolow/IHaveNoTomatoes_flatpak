@@ -23,7 +23,6 @@
     "--persist=.tomatoes"
   ],
   "modules": [
-    "shared-modules/glu/glu-9.json",
     "shared-modules/SDL/sdl12-compat.json",
     "shared-modules/SDL/SDL_image-1.2.12.json",
     {
